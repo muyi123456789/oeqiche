@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  /* 
+   * font-size 动态变化：
+   * - 最小 14px（小屏保底）
+   * - 中间按视口宽度的 4% 变化 (4dvw)
+   * - 最大 20px（大屏限制）
+   * 
+   * 当视口宽度变化时，1rem 的值会随之变化，带动所有 rem 单位等比缩放
+   */
+  font-size: clamp(1px, 1.3dvw, 20px);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1",Arial,sans-serif';
+  font-size: 1rem; /* 默认字体大小 */
+}
+main {
+  max-width: 1100px;
+  min-height: 80vh;
+  margin: 0 auto;
+}
+
+/* 1. 重置样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  max-width: 1100px;
+  min-height: 80vh;
+  margin: 70px auto 0px auto;
+}
+
