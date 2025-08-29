@@ -15,16 +15,16 @@ const Header: React.FC = () => {
         </div>
 
         <nav className="flex items-center max-w-[750px] w-[750px]">
-          <Link href="/main" className="header_link">首页</Link>
-          <Link href="/company" className="header_link">企业库</Link>
-          <Link href="/projectList" className="header_link">项目库</Link>
-          <Link href="#" className="header_link">活动</Link>
-          <Link href="#" className="header_link">产业图表</Link>
-          <Link href="#" className="header_link">产业百科</Link>
-          <Link href="#" className="header_link">产业报告</Link>
-          <Link href="#" className="header_link">产销榜</Link>
-          <Link href="#" className="header_link">资讯</Link>
-          <Link href="#" className="header_link">活动</Link>
+          <Link href="/main" className="flex-1 text-center py-2 header_link">首页</Link>
+          <Link href="/company" className="flex-1 text-center py-2 header_link">企业库</Link>
+          <Link href="/projectList" className="flex-1 text-center py-2 header_link">项目库</Link>
+          {/* <Link href="#" className="header_link">活动</Link> */}
+          <Link href="#" className="flex-1 text-center py-2 header_link">产业数据</Link>
+          {/* <Link href="#" className="header_link">产业百科</Link> */}
+          <Link href="#" className="flex-1 text-center py-2 header_link">资讯</Link>
+          {/* <Link href="#" className="header_link">产销榜</Link> */}
+          {/* <Link href="#" className="header_link">资讯</Link> */}
+          <Link href="#" className="flex-1 text-center py-2 header_link">活动</Link>
         </nav>
 
         <div className="flex items-center header_login w-[200px]">
